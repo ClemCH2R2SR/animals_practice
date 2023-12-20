@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>bienvenue sur la page des animaux</h1>
+
+    <form id="addAnimalForm">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" required></textarea>
+        <label for="category">Catégorie :</label>
+        <select id="category" name="category">
+            <option value="terrestre">Terrestre</option>
+            <option value="aquatique">Aquatique</option>
+            <option value="volant">Volant</option>
+        </select>
+        <label for="pictureLink">Lien de l'image :</label>
+        <input type="text" id="pictureLink" name="pictureLink" required>
+        <button type="submit" id="addButton">Ajouter</button>
+    </form>
+
+    <form id="filterForm">
+        <label for="categoryFilter">Filtre par catégorie:</label>
+        <select id="categoryFilter" name="categoryFilter">
+            <option value="tous">Tous</option>
+            <option value="terrestre">Terrestre</option>
+            <option value="aquatique">Aquatique</option>
+            <option value="volant">Volant</option>
+        </select>
+        <button type="submit" id="filterButton">Filtrer</button>
+    </form>
+
+    <div id="animals"></div>
+
+</body>
+</html>
